@@ -1,0 +1,22 @@
+.logoCarrito {
+    height: 40px;
+    padding-right: 80px;
+    color: antiquewhite;
+}
+
+
+.NavBar {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: rgb(245, 245, 63);
+    color: white;
+    min-height: 100px;
+    margin-left: 0%;
+    margin-right: 0%;
+  
+}
+
+img {
+    opacity: 0.8;
+}

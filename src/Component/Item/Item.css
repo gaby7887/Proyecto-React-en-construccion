@@ -1,0 +1,26 @@
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+    
+  }
+
+  .cardInd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    
+  }
+
+  a {
+      font-size: 17px;
+  }
+
+  .img {
+      margin: 30px;
+  }
+
+  
