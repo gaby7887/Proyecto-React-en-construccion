@@ -22,7 +22,7 @@ const Item = ({product}) => {
         <a href={product.imagen} target='_blank' rel="noreferrer">Repo</a>
     </CardContent>
       </CardContent>
-    </Card>
+    </Card> 
   );
 };
 
