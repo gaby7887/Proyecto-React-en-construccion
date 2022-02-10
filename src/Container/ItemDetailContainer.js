@@ -14,7 +14,7 @@ const ItemDetailContainer = () => {
     console.log(product);
 
     useEffect(() => {
-        fetch(`./listado.json/${userID}`)
+        fetch(`/listadoProductos.json/${userID}`)
         .then(response => response.json())
         .then((json) => SetProduct(json));
         

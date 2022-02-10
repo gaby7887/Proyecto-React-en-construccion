@@ -6,9 +6,10 @@ const ItemListContainer = () => {
     const [product, SetProduct] = useState ([]);
 
     useEffect(() => {
-        fetch('./listado.json')
+        fetch('/listadoProductos.json')
         .then(response => response.json())
         .then((json) => SetProduct(json));
+        
     }, []);
   
     return (

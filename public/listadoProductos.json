@@ -1,259 +1,259 @@
 [
     {
         "id": "1",
-        "imagen": "../imagenesIndumentaria/calzaFila.jpg",
+        "imagen": "/imagenesIndumentaria/calzaFila.jpg",
         "title": "Calza Fila",
         "precio": "$4.390"
     },
 
     {
         "id": "2",
-        "imagen": "../imagenesIndumentaria/calzaReebok.jpg",
+        "imagen": "/imagenesIndumentaria/calzaReebok.jpg",
         "title": "Calza Rebook Classics",
         "precio": "$4.499"
     },
 
     {
         "id": "3",
-        "imagen": "../imagenesIndumentaria/calzaReebokWorkout.jpg",
+        "imagen": "/imagenesIndumentaria/calzaReebokWorkout.jpg",
         "title": "Calza Reebok Workout Ready Print",
         "precio": "$6.999"
     },
 
     {
         "id": "4",
-        "imagen": "../imagenesIndumentaria/calzaNikeYoga.jpg",
+        "imagen": "/imagenesIndumentaria/calzaNikeYoga.jpg",
         "title": "Calza Nike Yoga Dri-Fit",
         "precio": "$10.999"
     },
 
     {
         "id": "5",
-        "imagen": "../imagenesIndumentaria/calzaNikeYogaDri-Fit.jpg",
+        "imagen": "/imagenesIndumentaria/calzaNikeYogaDri-Fit.jpg",
         "title": "Calza Nike Yoga Dri-fit Run",
         "precio": "$11.499"
     },
 
     {
         "id": "6",
-        "imagen": "../imagenesIndumentaria/remeraNikeMujer.jpg",
+        "imagen": "/imagenesIndumentaria/remeraNikeMujer.jpg",
         "title": "Remera Nike Air Dri-Fit",
         "precio": "$8.499"
     },
 
     {
         "id": "7",
-        "imagen": "../imagenesIndumentaria/remeraReebokMujer.jpg",
+        "imagen": "/imagenesIndumentaria/remeraReebokMujer.jpg",
         "title": "Remera Reebok Classics Foundation",
         "precio": "$4.269"
     },
 
     {
         "id": "8",
-        "imagen": "../imagenesIndumentaria/remeraAdidasMujer.jpg",
+        "imagen": "/imagenesIndumentaria/remeraAdidasMujer.jpg",
         "title": "Remera Adidas Primeblue",
         "precio": "$4.499"
     },
 
     {
         "id": "9",
-        "imagen": "../imagenesIndumentaria/remeraFila.jpg",
+        "imagen": "/imagenesIndumentaria/remeraFila.jpg",
         "title": "Remera Fila Bio",
         "precio": "$3.229"
     },
 
     {
         "id": "10",
-        "imagen": "../imagenesIndumentaria/remeraNike.jpg",
+        "imagen": "/imagenesIndumentaria/remeraNike.jpg",
         "title": "Remera Nike Air Dri-Fit",
         "precio": "$6.299"
     },
 
     {
         "id": "11",
-        "imagen": "../imagenesIndumentaria/remeraReebok.jpg",
+        "imagen": "/imagenesIndumentaria/remeraReebok.jpg",
         "title": "Remera Reebok Training",
         "precio": "$5.219"
     },
 
     {
         "id": "12",
-        "imagen": "../imagenesIndumentaria/remeraAdidas.jpg",
+        "imagen": "/imagenesIndumentaria/remeraAdidas.jpg",
         "title": "Remera Adidas Aeroready",
         "precio": "$4.499"
     },
 
     {
         "id": "13",
-        "imagen": "../imagenesIndumentaria/remeraUmbro.jpg",
+        "imagen": "/imagenesIndumentaria/remeraUmbro.jpg",
         "title": "Remera Umbro Est Basic",
         "precio": "$2.800"
     },
 
     {
         "id": "14",
-        "imagen": "../imagenesIndumentaria/pantalonAdidasTiro.jpg",
+        "imagen": "/imagenesIndumentaria/pantalonAdidasTiro.jpg",
         "title": "Pantalon Adidas Tiro 21",
         "precio": "$6.999"
     },
 
     {
         "id": "15",
-        "imagen": "../imagenesIndumentaria/pantalonNikeSporstwear.jpg",
+        "imagen": "/imagenesIndumentaria/pantalonNikeSporstwear.jpg",
         "title": "Pantalon Nike Sporstwear",
         "precio": "$10.499"
     },
 
     {
         "id": "16",
-        "imagen": "../imagenesIndumentaria/pantalonPumaFerrari.jpg",
+        "imagen": "/imagenesIndumentaria/pantalonPumaFerrari.jpg",
         "title": "Pantalon Puma Ferrari Race",
         "precio": "$10.899"
     },
 
     {
         "id": "17",
-        "imagen": "../imagenesCalzado/zapatillaAdidasUltraboost.jpg",
+        "imagen": "/imagenesCalzado/zapatillaAdidasUltraboost.jpg",
         "title": "Zapatillas Adidas Ultraboost",
         "precio": "$30.100"
     },
     
     {
         "id": "18",
-        "imagen": "../imagenesCalzado/zapatillaPuma.jpg",
+        "imagen": "/imagenesCalzado/zapatillaPuma.jpg",
         "title": "Zapatillas Puma R78",
         "precio": "$13.500"
     },
     
     {
         "id": "19",
-        "imagen": "../imagenesCalzado/zapatillaPumaX-Ray.jpg",
+        "imagen": "/imagenesCalzado/zapatillaPumaX-Ray.jpg",
         "title": "Zapatillas Puma X-Ray 2",
         "precio": "$14.300"
     },
     
     {
         "id": "20",
-        "imagen": "../imagenesCalzado/zapatillaTopperStrong.jpg",
+        "imagen": "/imagenesCalzado/zapatillaTopperStrong.jpg",
         "title": "Zapatillas Topper Strong Pace III",
         "precio": "$7.000"
     },
     
     {
         "id": "21",
-        "imagen": "../imagenesCalzado/zapatillaAsicsGel.jpg",
+        "imagen": "/imagenesCalzado/zapatillaAsicsGel.jpg",
         "title": "Zapatillas Asics Gel",
         "precio": "$17.999"
     },
     
     {
         "id": "22",
-        "imagen": "../imagenesCalzado/zapatillaFilaAxilus.jpg",
+        "imagen": "/imagenesCalzado/zapatillaFilaAxilus.jpg",
         "title": "Zapatillas Fila Axilus Ace Clay",
         "precio": "$15.430"
     },
     
     {
         "id": "23",
-        "imagen": "../imagenesCalzado/zapatillaNewBalance.jpg",
+        "imagen": "/imagenesCalzado/zapatillaNewBalance.jpg",
         "title": "Zapatillas New Balance",
         "precio": "$15.800"
     },
     
     {
         "id": "24",
-        "imagen": "../imagenesCalzado/zapatillaAdidasGalaxy.jpg",
+        "imagen": "/imagenesCalzado/zapatillaAdidasGalaxy.jpg",
         "title": "Zapatillas Adidas Galaxy",
         "precio": "$9.499"
     },
     
     {
         "id": "25",
-        "imagen": "../imagenesCalzado/zapatillaNikeAir.jpg",
+        "imagen": "/imagenesCalzado/zapatillaNikeAir.jpg",
         "title": "Zapatillas Nike Air",
         "precio": "$20.999"
     },
     
     {
         "id": "26",
-        "imagen": "../imagenesCalzado/zapatillaAdidasSupernova.jpg",
+        "imagen": "/imagenesCalzado/zapatillaAdidasSupernova.jpg",
         "title": "Zapatillas Adidas Supernova",
         "precio": "$18.499"
     },
     
     {
         "id": "27",
-        "imagen": "../imagenesCalzado/zapatillasNikeRevolution.jpg",
+        "imagen": "/imagenesCalzado/zapatillasNikeRevolution.jpg",
         "title": "Zapatillas Nike Revolution",
         "precio": "$12.499"
     },
     
     {
         "id": "28",
-        "imagen": "../imagenesCalzado/zapatillaAsicsGel-Nimbus.jpg",
+        "imagen": "/imagenesCalzado/zapatillaAsicsGel-Nimbus.jpg",
         "title": "Zapatillas Asics Gel-Nimbus",
         "precio": "$30.200"
     },
     
     {
         "id": "29",
-        "imagen": "../imagenesCalzado/zapatillaLaGear.jpg",
+        "imagen": "/imagenesCalzado/zapatillaLaGear.jpg",
         "title": "Zapatillas La Gear Day",
         "precio": "$7.499"
     },
     
     {
         "id": "30",
-        "imagen": "../imagenesCalzado/zapatillaNikeAir.jpg",
+        "imagen": "/imagenesCalzado/zapatillaNikeAir.jpg",
         "title": "Zapatillas Nike Air Zoom Vomero",
         "precio": "$30.999"
     },
 
     {
         "id": "31",
-        "imagen": "../imagenesAccesorios/pelotasDunlopATP.jpg",
+        "imagen": "/imagenesAccesorios/pelotasDunlopATP.jpg",
         "title": "Pelotas Dunlop ATP x3",
         "precio": "$2.340"
     },
     
     {
         "id": "32",
-        "imagen": "../imagenesAccesorios/pelotasHeadPro.jpg",
+        "imagen": "/imagenesAccesorios/pelotasHeadPro.jpg",
         "title": "Pelotas Head Pro",
         "precio": "$2.600"
     },
     
     {
         "id": "33",
-        "imagen": "../imagenesAccesorios/pelotasWilsonExtraDuty.jpg",
+        "imagen": "/imagenesAccesorios/pelotasWilsonExtraDuty.jpg",
         "title": "Pelotas Wilson Extra Duty",
         "precio": "$2.349"
     },
     
     {
         "id": "34",
-        "imagen": "../imagenesAccesorios/pelotasBabolatGold.jpg",
+        "imagen": "/imagenesAccesorios/pelotasBabolatGold.jpg",
         "title": "Pelotas Babolat Gold All Court",
         "precio": "$3.289"
     },
     
     {
         "id": "35",
-        "imagen": "../imagenesAccesorios/pelotasWilsonRolandGarros.jpg",
+        "imagen": "/imagenesAccesorios/pelotasWilsonRolandGarros.jpg",
         "title": "Pelotas Wilson Roland Garros",
         "precio": "$2.699"
     },
     
     {
         "id": "36",
-        "imagen": "../imagenesAccesorios/gripBabolat.jpg",
+        "imagen": "/imagenesAccesorios/gripBabolat.jpg",
         "title": "Grip Babolat Syntec Pro",
         "precio": "$1.569"
     },
     
     {
         "id": "37",
-        "imagen": "../imagenesAccesorios/gripAdidas.jpg",
+        "imagen": "/imagenesAccesorios/gripAdidas.jpg",
         "title": "Grip Adidas Perform",
         "precio": "$3.059"
     }
