@@ -4,21 +4,24 @@ import ItemDetail from '../Component/ItemDetail/ItemDetail';
 import { useParams } from 'react-router-dom';
 
 const ItemDetailContainer = () => {
-    const [product, SetProduct] = useState ({});
+    const [product, setProduct] = useState ({});
 
-    let id = useParams();
+    const {id} = useParams();
 
-    let userID = id.id;
+    console.log(id);
 
-    console.log(userID);
-    console.log(product);
+    console.log(product); 
 
     useEffect(() => {
-        fetch(`/listadoProductos.json/${userID}`)
-        .then(response => response.json())
-        .then((json) => SetProduct(json));
+      const aux = async() => {
+        let response = await fetch('/listadoProductos.json')
+        let json = await response.json()
+        let auxi = await json.find(j=>j.id===id)
+        console.log(auxi)
+      }  
+      aux();
         
-    }, [userID]);
+    }, [id]);
 
   return (
     <div>
