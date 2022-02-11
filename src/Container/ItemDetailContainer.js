@@ -8,16 +8,12 @@ const ItemDetailContainer = () => {
 
     const {id} = useParams();
 
-    console.log(id);
-
-    console.log(product); 
-
     useEffect(() => {
       const aux = async() => {
         let response = await fetch('/listadoProductos.json')
         let json = await response.json()
         let auxi = await json.find(j=>j.id===id)
-        console.log(auxi)
+        setProduct(auxi)
       }  
       aux();
         

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import './Item.css';
 import {Card, CardContent, CardMedia, Typography} from '@mui/material';
+import { Link } from 'react-router-dom';
  
 const Item = ({product}) => {
   return (
@@ -19,7 +20,7 @@ const Item = ({product}) => {
           {product.precio}
         </Typography>
     <CardContent >
-        <a href={product.imagen} target='_blank' rel="noreferrer">Repo</a>
+        <Link to={`/detail/${product.id}`}>Repo</Link>
     </CardContent>
       </CardContent>
     </Card> 
