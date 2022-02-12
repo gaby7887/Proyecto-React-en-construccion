@@ -1,10 +1,13 @@
 import React from 'react';
-import IconoCart from "../../Imagenes/IconoCart.png";
+
+import SliderCart from './SliderCart';
+ //return <img className='logoCarrito' src={IconoCart} alt="logo" />
+
 
 const CartWidget = () => {
-  return <img className='logoCarrito' src={IconoCart} alt="logo" />
-
-
+  return (
+    <SliderCart />
+  )
 };
 
 export default CartWidget;

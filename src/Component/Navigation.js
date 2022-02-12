@@ -1,16 +1,17 @@
 import './Navigation.css';
 
 import { Link } from "react-router-dom";
+import NavBar from './NavBar/NavBar';
+import Dropdown from './dropdown/Dropdown';
 
 const Navigation = () => {
     return (
         <nav className='Navigation'>
             <ul className='List-ul'>
                 <Link to="/" className='Link'>Home</Link>
-                <Link to="/category/indumentaria" className='Link'>Indumentaria</Link>
-                <Link to="/category/calzado" className='Link'>Calzado</Link>
-                <Link to="/category/accesorios" className='Link'>Accesorios</Link>
+                <Dropdown />
             </ul>
+            <NavBar />
         </nav>
     )
 

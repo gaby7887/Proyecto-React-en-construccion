@@ -20,7 +20,7 @@ const Item = ({product}) => {
           {product.precio}
         </Typography>
     <CardContent >
-        <Link to={`/detail/${product.id}`}>Repo</Link>
+        <Link to={`/detail/${product.id}`} className="repo">Repo</Link>
     </CardContent>
       </CardContent>
     </Card> 

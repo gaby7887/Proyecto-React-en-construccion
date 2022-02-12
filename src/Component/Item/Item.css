@@ -23,4 +23,15 @@
       margin: 30px;
   }
 
+  .listaProductos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .repo {
+    color: #1976d2;
+    text-decoration: none;
+    font-weight: 400;
+  }
+
   

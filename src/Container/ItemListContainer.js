@@ -10,23 +10,16 @@ const ItemListContainer = () => {
 const { categoria } = useParams();
 
 
-console.log(useParams());
-
     useEffect(() => {
         const check = async() => {
         let response = await fetch('/listadoProductos.json');
-        let json = await response.json();
-        let aux = await json.filter(j=>j.categoria===categoria)
-        setProduct(aux)
+        let json = await response.json();        
+        let aux = await json
+        setProduct(categoria ? aux.filter(j=>j.categoria===categoria): aux)
         }
         check();
         
     }, [categoria]);
-
-    let listado = []
-         let mostrar = (listado !== categoria ? listado : categoria)
-         console.log(mostrar)
-   
         
     return (
 
@@ -34,10 +27,7 @@ console.log(useParams());
             <ItemList product={product} />
         </>
         
-
     )
 };
-
-
 
 export default ItemListContainer;

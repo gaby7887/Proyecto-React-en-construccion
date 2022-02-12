@@ -1,7 +1,7 @@
 .Navigation {
     display: flex;
     justify-content: space-around;
-    background-color: azure;
+    background-color: rgb(238, 252, 252);    
     color: black;
     align-items: center;
     min-height: 50px;
@@ -18,8 +18,10 @@
 }
 
 .Link {
-    color: black;
-    
+    color: #1976d2;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.875rem;
 }
 
 .active {
