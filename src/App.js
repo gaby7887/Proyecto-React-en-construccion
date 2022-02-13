@@ -9,12 +9,14 @@ import ItemListContainer from './Container/ItemListContainer';
 
 const App = () => {
   return (
-    
+  
     <>
+    
       <Router>
         <div>
           <Navigation />
-        </div>      
+        </div>  
+
         <Routes>
           <Route path='/' element={<Home />} />        
           <Route path='/detail/:id' element={<ItemDetailContainer />} />
@@ -22,8 +24,9 @@ const App = () => {
           <Route path='*' element={<Error />} />
         </Routes>
       </Router>
+      
     </>
-    
+ 
   )
 };
 
