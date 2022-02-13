@@ -31,9 +31,6 @@ console.log(item)
         {product.precio}
       </Typography>
       <Typography>
-        <ItemCount stock={6} initial={1}/>
-      </Typography>
-      <Typography>
         {item > 0 ? <Link to='/cart'><button>Terminar compra</button></Link> : <ItemCount stock={6} initial={1} onAdd={onAdd} />}
       </Typography>
     </CardContent>
