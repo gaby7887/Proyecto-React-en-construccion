@@ -1,9 +1,18 @@
-import React from 'react';
+import {useState} from 'react';
 import ItemCount from '../ItemCount/ItemCount';
-
+import { Link } from 'react-router-dom';
 import {Card, CardContent, CardMedia, Typography} from '@mui/material';
 
+ 
 const ItemDetail = ({product}) => {
+  const [item, setItem] = useState(0)
+
+const onAdd = (count) => {
+  setItem(count)
+
+}
+console.log(item)
+
   
   return (
 
@@ -24,10 +33,11 @@ const ItemDetail = ({product}) => {
       <Typography>
         <ItemCount stock={6} initial={1}/>
       </Typography>
-  
+      <Typography>
+        {item > 0 ? <Link to='/cart'><button>Terminar compra</button></Link> : <ItemCount stock={6} initial={1} onAdd={onAdd} />}
+      </Typography>
     </CardContent>
   </Card>
-
   
   )
 };
