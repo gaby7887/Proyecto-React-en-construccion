@@ -6,17 +6,20 @@ import Navigation from './Component/Navigation';
 import Error from './Component/Views/Error';
 import ItemListContainer from './Container/ItemListContainer';
 import Cart from './Component/Cart/Cart';
+import { CartProvider} from './Context/CartContext';
+//import ItemDetail from './Component/ItemDetail/ItemDetail';
+
 
 
 const App = () => {
   return (
   
     <>
-    
+    <CartProvider>
       <Router>
         <div>
           <Navigation />
-        </div>  
+        </div> 
 
         <Routes>
           <Route path='/' element={<Home />} />   
@@ -26,6 +29,7 @@ const App = () => {
           <Route path='*' element={<Error />} />
         </Routes>
       </Router>
+      </CartProvider>
       
     </>
  

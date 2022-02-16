@@ -4,7 +4,8 @@
         "categoria":"indumentaria",
         "imagen": "/imagenesIndumentaria/calzaFila.jpg",
         "title": "Calza Fila",
-        "precio": "$4.390"
+        "precio": "$4.390",
+        "stock": "15"
     },
 
     {
@@ -12,7 +13,8 @@
         "categoria":"indumentaria",
         "imagen": "/imagenesIndumentaria/calzaReebok.jpg",
         "title": "Calza Rebook Classics",
-        "precio": "$4.499"
+        "precio": "$4.499",
+        "stock": "15"
     },
 
     {
@@ -20,7 +22,8 @@
         "categoria":"indumentaria",
         "imagen": "/imagenesIndumentaria/calzaReebokWorkout.jpg",
         "title": "Calza Reebok Workout Ready Print",
-        "precio": "$6.999"
+        "precio": "$6.999",
+        "stock": "15"
     },
 
     {
@@ -28,7 +31,8 @@
         "categoria":"indumentaria",
         "imagen": "/imagenesIndumentaria/calzaNikeYoga.jpg",
         "title": "Calza Nike Yoga Dri-Fit",
-        "precio": "$10.999"
+        "precio": "$10.999",
+        "stock": "15"
     },
 
     {
@@ -36,7 +40,8 @@
         "categoria":"indumentaria",
         "imagen": "/imagenesIndumentaria/calzaNikeYogaDri-Fit.jpg",
         "title": "Calza Nike Yoga Dri-fit Run",
-        "precio": "$11.499"
+        "precio": "$11.499",
+        "stock": "15"
     },
 
     {
@@ -44,7 +49,8 @@
         "categoria":"indumentaria",
         "imagen": "/imagenesIndumentaria/remeraNikeMujer.jpg",
         "title": "Remera Nike Air Dri-Fit",
-        "precio": "$8.499"
+        "precio": "$8.499",
+        "stock": "15"
     },
 
     {
@@ -52,7 +58,8 @@
         "categoria":"indumentaria",
         "imagen": "/imagenesIndumentaria/remeraReebokMujer.jpg",
         "title": "Remera Reebok Classics Foundation",
-        "precio": "$4.269"
+        "precio": "$4.269",
+        "stock": "15"
     },
 
     {
@@ -60,7 +67,8 @@
         "categoria":"indumentaria",
         "imagen": "/imagenesIndumentaria/remeraAdidasMujer.jpg",
         "title": "Remera Adidas Primeblue",
-        "precio": "$4.499"
+        "precio": "$4.499",
+        "stock": "15"
     },
 
     {
@@ -68,7 +76,8 @@
         "categoria":"indumentaria",
         "imagen": "/imagenesIndumentaria/remeraFila.jpg",
         "title": "Remera Fila Bio",
-        "precio": "$3.229"
+        "precio": "$3.229",
+        "stock": "15"
     },
 
     {
@@ -76,7 +85,8 @@
         "categoria":"indumentaria",
         "imagen": "/imagenesIndumentaria/remeraNike.jpg",
         "title": "Remera Nike Air Dri-Fit",
-        "precio": "$6.299"
+        "precio": "$6.299",
+        "stock": "15"
     },
 
     {
@@ -84,7 +94,8 @@
         "categoria":"indumentaria",
         "imagen": "/imagenesIndumentaria/remeraReebok.jpg",
         "title": "Remera Reebok Training",
-        "precio": "$5.219"
+        "precio": "$5.219",
+        "stock": "15"
     },
 
     {
@@ -92,7 +103,8 @@
         "categoria":"indumentaria",
         "imagen": "/imagenesIndumentaria/remeraAdidas.jpg",
         "title": "Remera Adidas Aeroready",
-        "precio": "$4.499"
+        "precio": "$4.499",
+        "stock": "15"
     },
 
     {
@@ -100,7 +112,8 @@
         "categoria":"indumentaria",
         "imagen": "/imagenesIndumentaria/remeraUmbro.jpg",
         "title": "Remera Umbro Est Basic",
-        "precio": "$2.800"
+        "precio": "$2.800",
+        "stock": "15"
     },
 
     {
@@ -108,7 +121,8 @@
         "categoria":"indumentaria",
         "imagen": "/imagenesIndumentaria/pantalonAdidasTiro.jpg",
         "title": "Pantalon Adidas Tiro 21",
-        "precio": "$6.999"
+        "precio": "$6.999",
+        "stock": "15"
     },
 
     {
@@ -116,7 +130,8 @@
         "categoria":"indumentaria",
         "imagen": "/imagenesIndumentaria/pantalonNikeSporstwear.jpg",
         "title": "Pantalon Nike Sporstwear",
-        "precio": "$10.499"
+        "precio": "$10.499",
+        "stock": "15"
     },
 
     {
@@ -124,7 +139,8 @@
         "categoria":"indumentaria",
         "imagen": "/imagenesIndumentaria/pantalonPumaFerrari.jpg",
         "title": "Pantalon Puma Ferrari Race",
-        "precio": "$10.899"
+        "precio": "$10.899",
+        "stock": "15"
     },
 
     {
@@ -132,7 +148,8 @@
         "categoria":"calzado",
         "imagen": "/imagenesCalzado/zapatillaAdidasUltraboost.jpg",
         "title": "Zapatillas Adidas Ultraboost",
-        "precio": "$30.100"
+        "precio": "$30.100",
+        "stock": "8"
     },
     
     {
@@ -140,7 +157,8 @@
         "categoria":"calzado",
         "imagen": "/imagenesCalzado/zapatillaPuma.jpg",
         "title": "Zapatillas Puma R78",
-        "precio": "$13.500"
+        "precio": "$13.500",
+        "stock": "8"
     },
     
     {
@@ -148,7 +166,8 @@
         "categoria":"calzado",
         "imagen": "/imagenesCalzado/zapatillaPumaX-Ray.jpg",
         "title": "Zapatillas Puma X-Ray 2",
-        "precio": "$14.300"
+        "precio": "$14.300",
+        "stock": "8"
     },
     
     {
@@ -156,7 +175,8 @@
         "categoria":"calzado",
         "imagen": "/imagenesCalzado/zapatillaTopperStrong.jpg",
         "title": "Zapatillas Topper Strong Pace III",
-        "precio": "$7.000"
+        "precio": "$7.000",
+        "stock": "8"
     },
     
     {
@@ -164,7 +184,8 @@
         "categoria":"calzado",
         "imagen": "/imagenesCalzado/zapatillaAsicsGel.jpg",
         "title": "Zapatillas Asics Gel",
-        "precio": "$17.999"
+        "precio": "$17.999",
+        "stock": "8"
     },
     
     {
@@ -172,7 +193,8 @@
         "categoria":"calzado",
         "imagen": "/imagenesCalzado/zapatillaFilaAxilus.jpg",
         "title": "Zapatillas Fila Axilus Ace Clay",
-        "precio": "$15.430"
+        "precio": "$15.430",
+        "stock": "8"
     },
     
     {
@@ -180,7 +202,8 @@
         "categoria":"calzado",
         "imagen": "/imagenesCalzado/zapatillaNewBalance.jpg",
         "title": "Zapatillas New Balance",
-        "precio": "$15.800"
+        "precio": "$15.800",
+        "stock": "8"
     },
     
     {
@@ -188,7 +211,8 @@
         "categoria":"calzado",
         "imagen": "/imagenesCalzado/zapatillaAdidasGalaxy.jpg",
         "title": "Zapatillas Adidas Galaxy",
-        "precio": "$9.499"
+        "precio": "$9.499",
+        "stock": "8"
     },
     
     {
@@ -196,7 +220,8 @@
         "categoria":"calzado",
         "imagen": "/imagenesCalzado/zapatillaNikeAir.jpg",
         "title": "Zapatillas Nike Air",
-        "precio": "$20.999"
+        "precio": "$20.999",
+        "stock": "8"
     },
     
     {
@@ -204,7 +229,8 @@
         "categoria":"calzado",
         "imagen": "/imagenesCalzado/zapatillaAdidasSupernova.jpg",
         "title": "Zapatillas Adidas Supernova",
-        "precio": "$18.499"
+        "precio": "$18.499",
+        "stock": "8"
     },
     
     {
@@ -212,7 +238,8 @@
         "categoria":"calzado",
         "imagen": "/imagenesCalzado/zapatillasNikeRevolution.jpg",
         "title": "Zapatillas Nike Revolution",
-        "precio": "$12.499"
+        "precio": "$12.499",
+        "stock": "8"
     },
     
     {
@@ -220,7 +247,8 @@
         "categoria":"calzado",
         "imagen": "/imagenesCalzado/zapatillaAsicsGel-Nimbus.jpg",
         "title": "Zapatillas Asics Gel-Nimbus",
-        "precio": "$30.200"
+        "precio": "$30.200",
+        "stock": "8"
     },
     
     {
@@ -228,7 +256,8 @@
         "categoria":"calzado",
         "imagen": "/imagenesCalzado/zapatillaLaGear.jpg",
         "title": "Zapatillas La Gear Day",
-        "precio": "$7.499"
+        "precio": "$7.499",
+        "stock": "8"
     },
     
     {
@@ -236,7 +265,8 @@
         "categoria":"calzado",
         "imagen": "/imagenesCalzado/zapatillaNikeAir.jpg",
         "title": "Zapatillas Nike Air Zoom Vomero",
-        "precio": "$30.999"
+        "precio": "$30.999",
+        "stock": "8"
     },
 
     {
@@ -244,7 +274,8 @@
         "categoria":"accesorios",
         "imagen": "/imagenesAccesorios/pelotasDunlopATP.jpg",
         "title": "Pelotas Dunlop ATP x3",
-        "precio": "$2.340"
+        "precio": "$2.340",
+        "stock": "30"
     },
     
     {
@@ -252,7 +283,8 @@
         "categoria":"accesorios",
         "imagen": "/imagenesAccesorios/pelotasHeadPro.jpg",
         "title": "Pelotas Head Pro",
-        "precio": "$2.600"
+        "precio": "$2.600",
+        "stock": "30"
     },
     
     {
@@ -260,7 +292,8 @@
         "categoria":"accesorios",
         "imagen": "/imagenesAccesorios/pelotasWilsonExtraDuty.jpg",
         "title": "Pelotas Wilson Extra Duty",
-        "precio": "$2.349"
+        "precio": "$2.349",
+        "stock": "30"
     },
     
     {
@@ -268,7 +301,8 @@
         "categoria":"accesorios",
         "imagen": "/imagenesAccesorios/pelotasBabolatGold.jpg",
         "title": "Pelotas Babolat Gold All Court",
-        "precio": "$3.289"
+        "precio": "$3.289",
+        "stock": "30"
     },
     
     {
@@ -276,7 +310,8 @@
         "categoria":"accesorios",
         "imagen": "/imagenesAccesorios/pelotasWilsonRolandGarros.jpg",
         "title": "Pelotas Wilson Roland Garros",
-        "precio": "$2.699"
+        "precio": "$2.699",
+        "stock": "30"
     },
     
     {
@@ -284,7 +319,8 @@
         "categoria":"accesorios",
         "imagen": "/imagenesAccesorios/gripBabolat.jpg",
         "title": "Grip Babolat Syntec Pro",
-        "precio": "$1.569"
+        "precio": "$1.569",
+        "stock": "20"
     },
     
     {
@@ -292,7 +328,8 @@
         "categoria":"accesorios",
         "imagen": "/imagenesAccesorios/gripAdidas.jpg",
         "title": "Grip Adidas Perform",
-        "precio": "$3.059"
+        "precio": "$3.059",
+        "stock": "20"
     }
     
 ]
