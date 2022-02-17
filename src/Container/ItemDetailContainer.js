@@ -2,9 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import ItemDetail from '../Component/ItemDetail/ItemDetail';
 import { useParams } from 'react-router-dom';
+import { useCartContext } from '../Context/CartContext';
 
 const ItemDetailContainer = () => {
     const [product, setProduct] = useState ({});
+
+    const {addItem} = useCartContext()
 
     const {id} = useParams();
 
@@ -19,10 +22,14 @@ const ItemDetailContainer = () => {
         
     }, [id]);
 
+    const onAdd = (count) => {
+      addItem(product,count);
+    }
+
   return (
     <div>
         <Link to={`/detail/${product.id}`} className='Link'> 
-            <ItemDetail product={product} />
+            <ItemDetail product={product} onAdd={onAdd} />
         </Link>
 
         <p>{product.title}</p>

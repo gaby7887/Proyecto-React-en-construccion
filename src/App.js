@@ -7,8 +7,6 @@ import Error from './Component/Views/Error';
 import ItemListContainer from './Container/ItemListContainer';
 import Cart from './Component/Cart/Cart';
 import { CartProvider} from './Context/CartContext';
-//import ItemDetail from './Component/ItemDetail/ItemDetail';
-
 
 
 const App = () => {

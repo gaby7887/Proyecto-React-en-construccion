@@ -4,15 +4,10 @@ import { Link } from 'react-router-dom';
 import {Card, CardContent, CardMedia, Typography} from '@mui/material';
 
  
-const ItemDetail = ({product}) => {
-  const [item, setItem] = useState(0)
+const ItemDetail = ({product, onAdd}) => {
 
-const onAdd = (count) => {
-  setItem(count)
-
-}
-console.log(item)
-
+  const {stock} = product
+  
   
   return (
 
@@ -31,7 +26,8 @@ console.log(item)
         {product.precio}
       </Typography>
       <Typography>
-        {item > 0 ? <Link to='/cart'><button>Terminar compra</button></Link> : <ItemCount stock={6} initial={1} onAdd={onAdd} />}
+        <ItemCount> stock={stock} initial={1} onAdd={onAdd}</ItemCount>
+        <Link to='/cart'><button>Terminar compra</button></Link>
       </Typography>
     </CardContent>
   </Card>
