@@ -26,7 +26,7 @@ const ItemDetail = ({product, onAdd}) => {
         {product.precio}
       </Typography>
       <Typography>
-        <ItemCount> stock={stock} initial={1} onAdd={onAdd}</ItemCount>
+        <ItemCount stock={stock} initial={1} onAdd={onAdd} />
         <Link to='/cart'><button>Terminar compra</button></Link>
       </Typography>
     </CardContent>

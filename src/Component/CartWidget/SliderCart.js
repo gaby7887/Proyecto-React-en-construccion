@@ -29,7 +29,8 @@ export default function SliderCart() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {cart.length === 0 ? <h2>No hay productos<br></br> en el carrito</h2> : cart.map((x) => 
+        {cart.length == 0 ? <h2>No hay productos<br></br> en el carrito</h2> : 
+        cart.map((x) => 
           <>
           <p>Nombre: {x.title}</p>
           <p>Precio: ${x.precio}</p>

@@ -8,7 +8,7 @@ export const CartProvider = ({children}) => {
     const [cart, setCart] = useState([]);
 
     const isInCart = (id) => {
-        const enElCart = cart.some(x => x.id === id)
+        const enElCart = cart.some(x => x.id == id)
         console.log(enElCart);
         return enElCart
     }
@@ -16,7 +16,7 @@ export const CartProvider = ({children}) => {
     const getQuantity=(product,count)=>{
         const filtro = [...cart]
         filtro.forEach(i=>{
-            if(i.id === product.id){
+            if(i.id == product.id){
                 i.qty += count
             }
         })
