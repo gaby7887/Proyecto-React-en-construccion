@@ -6,6 +6,8 @@ import Button from '@mui/material/Button';
 import List from '@mui/material/List';
 import IconoCart from "../../Imagenes/IconoCart.png";
 import { useCartContext } from '../../Context/CartContext';
+import tachoDeBasura from '../../Imagenes/tachoDeBasura.png';
+
 
 export default function SliderCart() {
   const [state, setState] = useState({
