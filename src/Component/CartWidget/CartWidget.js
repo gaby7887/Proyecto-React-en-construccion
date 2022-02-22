@@ -6,8 +6,15 @@ import SliderCart from './SliderCart';
 
 
 const CartWidget = () => {
+  const tachoDeBasura = () => {
+    
+  }
   return (
+    <>
+    <button onClick={tachoDeBasura}><i class="fas fa-trash-alt"></i></button>
     <SliderCart />
+    </>
+   
   )
 };
 
