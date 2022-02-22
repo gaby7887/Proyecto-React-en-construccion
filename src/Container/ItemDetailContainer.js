@@ -6,6 +6,7 @@ import { useCartContext } from '../Context/CartContext';
 
 const ItemDetailContainer = () => {
     const [product, setProduct] = useState ({});
+    const [open, setOpen] = useState(true)
 
     const {addItem} = useCartContext()
 
@@ -24,12 +25,13 @@ const ItemDetailContainer = () => {
 
     const onAdd = (count) => {
       addItem(product,count);
+      setOpen(false)
     }
 
   return (
     <div>
         <Link to={`/detail/${product.id}`} className='Link'> 
-            <ItemDetail product={product} onAdd={onAdd} />
+            <ItemDetail product={product} onAdd={onAdd} open={open} />
         </Link>
 
         <p>{product.title}</p>

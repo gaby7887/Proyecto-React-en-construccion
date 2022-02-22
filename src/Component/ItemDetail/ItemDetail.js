@@ -1,10 +1,10 @@
-import {useState} from 'react';
+import React from 'react';
 import ItemCount from '../ItemCount/ItemCount';
 import { Link } from 'react-router-dom';
 import {Card, CardContent, CardMedia, Typography} from '@mui/material';
 
  
-const ItemDetail = ({product, onAdd}) => {
+const ItemDetail = ({product, onAdd, open}) => {
 
   const {stock} = product
   
@@ -26,8 +26,13 @@ const ItemDetail = ({product, onAdd}) => {
         {product.precio}
       </Typography>
       <Typography>
-        <ItemCount stock={stock} initial={1} onAdd={onAdd} />
-        <Link to='/cart'><button>Terminar compra</button></Link>
+        
+        {
+          open ? <ItemCount stock={stock} initial={1} onAdd={onAdd} />
+          :
+          <Link to='/cart'><button>Terminar compra</button></Link>
+        }
+        
       </Typography>
     </CardContent>
   </Card>
