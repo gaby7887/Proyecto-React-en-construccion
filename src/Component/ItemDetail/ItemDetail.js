@@ -24,7 +24,7 @@ const ItemDetail = ({product, onAdd, open}) => {
         {product.title}
       </Typography>
       <Typography variant="h5" color="text.secondary">
-        {product.precio}
+        ${product.precio}
       </Typography>
       <Typography>
         

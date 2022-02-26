@@ -4,8 +4,8 @@
         "categoria":"indumentaria",
         "imagen": "/imagenesIndumentaria/calzaFila.jpg",
         "title": "Calza Fila",
-        "precio": "4390",
-        "stock": "15"
+        "precio": 4390,
+        "stock": 15
     },
 
     {
@@ -13,8 +13,8 @@
         "categoria":"indumentaria",
         "imagen": "/imagenesIndumentaria/calzaReebok.jpg",
         "title": "Calza Rebook Classics",
-        "precio": "4499",
-        "stock": "15"
+        "precio": 4499,
+        "stock": 15
     },
 
     {
@@ -22,8 +22,8 @@
         "categoria":"indumentaria",
         "imagen": "/imagenesIndumentaria/calzaReebokWorkout.jpg",
         "title": "Calza Reebok Workout Ready Print",
-        "precio": "6999",
-        "stock": "15"
+        "precio": 6999,
+        "stock": 15
     },
 
     {
@@ -31,8 +31,8 @@
         "categoria":"indumentaria",
         "imagen": "/imagenesIndumentaria/calzaNikeYoga.jpg",
         "title": "Calza Nike Yoga Dri-Fit",
-        "precio": "10999",
-        "stock": "15"
+        "precio": 10999,
+        "stock": 15
     },
 
     {
@@ -40,8 +40,8 @@
         "categoria":"indumentaria",
         "imagen": "/imagenesIndumentaria/calzaNikeYogaDri-Fit.jpg",
         "title": "Calza Nike Yoga Dri-fit Run",
-        "precio": "11499",
-        "stock": "15"
+        "precio": 11499,
+        "stock": 15
     },
 
     {
@@ -49,8 +49,8 @@
         "categoria":"indumentaria",
         "imagen": "/imagenesIndumentaria/remeraNikeMujer.jpg",
         "title": "Remera Nike Air Dri-Fit",
-        "precio": "8499",
-        "stock": "15"
+        "precio": 8499,
+        "stock": 15
     },
 
     {
@@ -58,8 +58,8 @@
         "categoria":"indumentaria",
         "imagen": "/imagenesIndumentaria/remeraReebokMujer.jpg",
         "title": "Remera Reebok Classics Foundation",
-        "precio": "4269",
-        "stock": "15"
+        "precio": 4269,
+        "stock": 15
     },
 
     {
@@ -67,8 +67,8 @@
         "categoria":"indumentaria",
         "imagen": "/imagenesIndumentaria/remeraAdidasMujer.jpg",
         "title": "Remera Adidas Primeblue",
-        "precio": "4499",
-        "stock": "15"
+        "precio": 4499,
+        "stock": 15
     },
 
     {
@@ -76,8 +76,8 @@
         "categoria":"indumentaria",
         "imagen": "/imagenesIndumentaria/remeraFila.jpg",
         "title": "Remera Fila Bio",
-        "precio": "3229",
-        "stock": "15"
+        "precio": 3229,
+        "stock": 15
     },
 
     {
@@ -85,8 +85,8 @@
         "categoria":"indumentaria",
         "imagen": "/imagenesIndumentaria/remeraNike.jpg",
         "title": "Remera Nike Air Dri-Fit",
-        "precio": "6299",
-        "stock": "15"
+        "precio": 6299,
+        "stock": 15
     },
 
     {
@@ -94,8 +94,8 @@
         "categoria":"indumentaria",
         "imagen": "/imagenesIndumentaria/remeraReebok.jpg",
         "title": "Remera Reebok Training",
-        "precio": "5219",
-        "stock": "15"
+        "precio": 5219,
+        "stock": 15
     },
 
     {
@@ -103,8 +103,8 @@
         "categoria":"indumentaria",
         "imagen": "/imagenesIndumentaria/remeraAdidas.jpg",
         "title": "Remera Adidas Aeroready",
-        "precio": "4499",
-        "stock": "15"
+        "precio": 4499,
+        "stock": 15
     },
 
     {
@@ -112,8 +112,8 @@
         "categoria":"indumentaria",
         "imagen": "/imagenesIndumentaria/remeraUmbro.jpg",
         "title": "Remera Umbro Est Basic",
-        "precio": "2800",
-        "stock": "15"
+        "precio": 2800,
+        "stock": 15
     },
 
     {
@@ -121,8 +121,8 @@
         "categoria":"indumentaria",
         "imagen": "/imagenesIndumentaria/pantalonAdidasTiro.jpg",
         "title": "Pantalon Adidas Tiro 21",
-        "precio": "6999",
-        "stock": "15"
+        "precio": 6999,
+        "stock": 15
     },
 
     {
@@ -130,8 +130,8 @@
         "categoria":"indumentaria",
         "imagen": "/imagenesIndumentaria/pantalonNikeSporstwear.jpg",
         "title": "Pantalon Nike Sporstwear",
-        "precio": "10499",
-        "stock": "15"
+        "precio": 10499,
+        "stock": 15
     },
 
     {
@@ -139,8 +139,8 @@
         "categoria":"indumentaria",
         "imagen": "/imagenesIndumentaria/pantalonPumaFerrari.jpg",
         "title": "Pantalon Puma Ferrari Race",
-        "precio": "10899",
-        "stock": "15"
+        "precio": 10899,
+        "stock": 15
     },
 
     {
@@ -148,8 +148,8 @@
         "categoria":"calzado",
         "imagen": "/imagenesCalzado/zapatillaAdidasUltraboost.jpg",
         "title": "Zapatillas Adidas Ultraboost",
-        "precio": "30100",
-        "stock": "8"
+        "precio": 30100,
+        "stock": 8
     },
     
     {
@@ -157,8 +157,8 @@
         "categoria":"calzado",
         "imagen": "/imagenesCalzado/zapatillaPuma.jpg",
         "title": "Zapatillas Puma R78",
-        "precio": "13500",
-        "stock": "8"
+        "precio": 13500,
+        "stock": 8
     },
     
     {
@@ -166,8 +166,8 @@
         "categoria":"calzado",
         "imagen": "/imagenesCalzado/zapatillaPumaX-Ray.jpg",
         "title": "Zapatillas Puma X-Ray 2",
-        "precio": "14300",
-        "stock": "8"
+        "precio": 14300,
+        "stock": 8
     },
     
     {
@@ -175,8 +175,8 @@
         "categoria":"calzado",
         "imagen": "/imagenesCalzado/zapatillaTopperStrong.jpg",
         "title": "Zapatillas Topper Strong Pace III",
-        "precio": "7000",
-        "stock": "8"
+        "precio": 7000,
+        "stock": 8
     },
     
     {
@@ -184,8 +184,8 @@
         "categoria":"calzado",
         "imagen": "/imagenesCalzado/zapatillaAsicsGel.jpg",
         "title": "Zapatillas Asics Gel",
-        "precio": "17999",
-        "stock": "8"
+        "precio": 17999,
+        "stock": 8
     },
     
     {
@@ -193,8 +193,8 @@
         "categoria":"calzado",
         "imagen": "/imagenesCalzado/zapatillaFilaAxilus.jpg",
         "title": "Zapatillas Fila Axilus Ace Clay",
-        "precio": "15430",
-        "stock": "8"
+        "precio": 15430,
+        "stock": 8
     },
     
     {
@@ -202,8 +202,8 @@
         "categoria":"calzado",
         "imagen": "/imagenesCalzado/zapatillaNewBalance.jpg",
         "title": "Zapatillas New Balance",
-        "precio": "15800",
-        "stock": "8"
+        "precio": 15800,
+        "stock": 8
     },
     
     {
@@ -211,8 +211,8 @@
         "categoria":"calzado",
         "imagen": "/imagenesCalzado/zapatillaAdidasGalaxy.jpg",
         "title": "Zapatillas Adidas Galaxy",
-        "precio": "9499",
-        "stock": "8"
+        "precio": 9499,
+        "stock": 8
     },
     
     {
@@ -220,8 +220,8 @@
         "categoria":"calzado",
         "imagen": "/imagenesCalzado/zapatillaNikeAir.jpg",
         "title": "Zapatillas Nike Air",
-        "precio": "20999",
-        "stock": "8"
+        "precio": 20999,
+        "stock": 8
     },
     
     {
@@ -229,8 +229,8 @@
         "categoria":"calzado",
         "imagen": "/imagenesCalzado/zapatillaAdidasSupernova.jpg",
         "title": "Zapatillas Adidas Supernova",
-        "precio": "18499",
-        "stock": "8"
+        "precio": 18499,
+        "stock": 8
     },
     
     {
@@ -238,8 +238,8 @@
         "categoria":"calzado",
         "imagen": "/imagenesCalzado/zapatillasNikeRevolution.jpg",
         "title": "Zapatillas Nike Revolution",
-        "precio": "12499",
-        "stock": "8"
+        "precio": 12499,
+        "stock": 8
     },
     
     {
@@ -247,8 +247,8 @@
         "categoria":"calzado",
         "imagen": "/imagenesCalzado/zapatillaAsicsGel-Nimbus.jpg",
         "title": "Zapatillas Asics Gel-Nimbus",
-        "precio": "30200",
-        "stock": "8"
+        "precio": 30200,
+        "stock": 8
     },
     
     {
@@ -256,8 +256,8 @@
         "categoria":"calzado",
         "imagen": "/imagenesCalzado/zapatillaLaGear.jpg",
         "title": "Zapatillas La Gear Day",
-        "precio": "7499",
-        "stock": "8"
+        "precio": 7499,
+        "stock": 8
     },
     
     {
@@ -265,8 +265,8 @@
         "categoria":"calzado",
         "imagen": "/imagenesCalzado/zapatillaNikeAir.jpg",
         "title": "Zapatillas Nike Air Zoom Vomero",
-        "precio": "30999",
-        "stock": "8"
+        "precio": 30999,
+        "stock": 8
     },
 
     {
@@ -274,8 +274,8 @@
         "categoria":"accesorios",
         "imagen": "/imagenesAccesorios/pelotasDunlopATP.jpg",
         "title": "Pelotas Dunlop ATP x3",
-        "precio": "2340",
-        "stock": "30"
+        "precio": 2340,
+        "stock": 30
     },
     
     {
@@ -283,8 +283,8 @@
         "categoria":"accesorios",
         "imagen": "/imagenesAccesorios/pelotasHeadPro.jpg",
         "title": "Pelotas Head Pro",
-        "precio": "2600",
-        "stock": "30"
+        "precio": 2600,
+        "stock": 30
     },
     
     {
@@ -292,8 +292,8 @@
         "categoria":"accesorios",
         "imagen": "/imagenesAccesorios/pelotasWilsonExtraDuty.jpg",
         "title": "Pelotas Wilson Extra Duty",
-        "precio": "2349",
-        "stock": "30"
+        "precio": 2349,
+        "stock": 30
     },
     
     {
@@ -301,8 +301,8 @@
         "categoria":"accesorios",
         "imagen": "/imagenesAccesorios/pelotasBabolatGold.jpg",
         "title": "Pelotas Babolat Gold All Court",
-        "precio": "3289",
-        "stock": "30"
+        "precio": 3289,
+        "stock": 30
     },
     
     {
@@ -310,8 +310,8 @@
         "categoria":"accesorios",
         "imagen": "/imagenesAccesorios/pelotasWilsonRolandGarros.jpg",
         "title": "Pelotas Wilson Roland Garros",
-        "precio": "2699",
-        "stock": "30"
+        "precio": 2699,
+        "stock": 30
     },
     
     {
@@ -319,8 +319,8 @@
         "categoria":"accesorios",
         "imagen": "/imagenesAccesorios/gripBabolat.jpg",
         "title": "Grip Babolat Syntec Pro",
-        "precio": "1569",
-        "stock": "20"
+        "precio": 1569,
+        "stock": 20
     },
     
     {
@@ -328,8 +328,8 @@
         "categoria":"accesorios",
         "imagen": "/imagenesAccesorios/gripAdidas.jpg",
         "title": "Grip Adidas Perform",
-        "precio": "3059",
-        "stock": "20"
+        "precio": 3059,
+        "stock": 20
     }
     
 ]

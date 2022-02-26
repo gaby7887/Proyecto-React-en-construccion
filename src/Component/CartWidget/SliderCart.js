@@ -6,6 +6,7 @@ import Button from '@mui/material/Button';
 import List from '@mui/material/List';
 import IconoCart from "../../Imagenes/IconoCart.png";
 import { useCartContext } from '../../Context/CartContext';
+import { Link } from 'react-router-dom';
 
 
 
@@ -14,9 +15,8 @@ export default function SliderCart() {
                                         right: false,
   });
 
-  const {cart, total} = useCartContext()
-
-  const [product, setProduct] = useState()
+  const {cart, removeItems, clearItems, total} = useCartContext()
+  
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
@@ -25,11 +25,7 @@ export default function SliderCart() {
 
     setState({ right: open });
   };
-  const tachoDeBasura = () => {
-    console.log(product)
-    
-    setProduct([]);
-  }
+  
 
   const list = (anchor) => (
     <Box
@@ -40,19 +36,28 @@ export default function SliderCart() {
     >
    
       <List>
-        {cart.length === 0 ? <h2>No hay productos<br></br> en el carrito</h2> : 
-        cart.map((x) => 
-          <div>
-            <img className='imagenCarrito' src={x.imagen} alt="logo"></img>
-            <p>Nombre: {x.title}</p>
-            <p>Precio: ${x.precio}</p>
-            <p>Cantidad: {x.qty}</p>
-            <button onClick={tachoDeBasura}><i class="fas fa-trash-alt"></i></button>
-          </div>)
-          }
-        
-        <h4>Total: ${total()}</h4>        
+      {cart.length === 0 ? <h2>No hay productos<br></br> en el carrito</h2> : 
+           cart.map((x) => {
+             return <div>
+               <img className='imagenCarrito' src={x.imagen} alt="logo"></img>
+               <p>Nombre: {x.title}</p>
+               <p>Precio: ${x.precio}</p>
+               <p>Cantidad: {x.qty}</p>
+               <button onClick={() => {
+                  removeItems(x.id)
+               }
+                 }><i class="fas fa-trash-alt"></i></button>
+             </div>
+             
+             
+           })
+}
+                       
+           <h4>Total: ${total()}</h4> 
+           <button onClick={clearItems}><i class="fas fa-trash-alt"></i></button>    
+              
       </List>
+      <Link to='/cart'><button>Terminar compra</button></Link>
     </Box>
   );
 
@@ -60,7 +65,7 @@ export default function SliderCart() {
     <div>
       {['right'].map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)}><img className='logoCarrito' src={IconoCart} alt="logo"/><span className='contadorCarrito'>0</span></Button>
+          <Button onClick={toggleDrawer(anchor, true)}><img className='logoCarrito' src={IconoCart} alt="logo"/></Button>
           
           <Drawer
             anchor={anchor}
@@ -69,6 +74,7 @@ export default function SliderCart() {
           >
             {list(anchor)}
           </Drawer>
+          
         </React.Fragment>
        
       ))}

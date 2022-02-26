@@ -1,18 +1,21 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { CartContext } from '../../Context/CartContext';
 
 import SliderCart from './SliderCart';
 
- //return <img className='logoCarrito' src={IconoCart} alt="logo" />
-
 
 const CartWidget = () => {
-  const tachoDeBasura = () => {
-    
-  }
+  const {contador} = useContext(CartContext)
+
+  
   return (
+
     <>
-    <button onClick={tachoDeBasura}><i class="fas fa-trash-alt"></i></button>
-    <SliderCart />
+     <SliderCart />
+
+    
+    <button>{contador()}</button>
+    
     </>
    
   )
