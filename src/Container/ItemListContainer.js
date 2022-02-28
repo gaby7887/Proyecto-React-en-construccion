@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import ItemList from '../Component/ItemList/ItemList';
 
+
 //FIREBASE - FIRESTORE
 import { collection, query, getDocs } from 'firebase/firestore';
 import { db} from '../Component/firebase/firebaseConfig';
