@@ -39,8 +39,8 @@ export default function SliderCart() {
       {cart.length === 0 ? <h2>No hay productos<br></br> en el carrito</h2> : 
            cart.map((x) => {
              return <div>
-               <img className='imagenCarrito' src={x.imagen} alt="logo"></img>
-               <p>Nombre: {x.title}</p>
+               <img className='imagenCarrito' src={x.img} alt="logo"></img>
+               <p>Nombre: {x.titulo}</p>
                <p>Precio: ${x.precio}</p>
                <p>Cantidad: {x.qty}</p>
                <button onClick={() => {

@@ -26,7 +26,7 @@ const ItemListContainer = () => {
 
     return (
         <div>{productosData.map((data) => {
-            return <ItemList productosData={data} key={data.id} />;
+            return <ItemList productosData={productosData} />;
         })}</div>
     )
     

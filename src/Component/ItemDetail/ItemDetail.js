@@ -17,7 +17,7 @@ const ItemDetail = ({productoData, onAdd, open}) => {
       <CardMedia className='img'
           component="img"
           height="180"
-          image={productoData.imagen}
+          image={productoData.img}
           alt={productoData.titulo}
       />
       <Typography gutterBottom variant="h5"  component="div">
