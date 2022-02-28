@@ -3,24 +3,24 @@ import './Item.css';
 import {Card, CardContent, CardMedia, Typography} from '@mui/material';
 import { Link } from 'react-router-dom';
  
-const Item = ({product}) => {
+const Item = ({productoData}) => {
   return (
     <Card className="card" style={{margin: 80}} sx={{ maxWidth: 345 }}>
       <CardContent className="cardInd">
         <CardMedia className='img'
             component="img"
             height="180"
-            image={product.imagen}
-            alt={product.title}
+            image={productoData.imagen}
+            alt={productoData.titulo}
         />
         <Typography gutterBottom variant="h5"  component="div">
-          {product.title}
+          {productoData.titulo}
         </Typography>
         <Typography variant="h5" color="text.secondary">
-          {product.precio}
+          {productoData.precio}
         </Typography>
     <CardContent >
-        <Link to={`/detail/${product.id}`} className="repo">Agregar</Link>
+        <Link to={`/detail/${productoData.id}`} className="repo">Agregar</Link>
     </CardContent>
       </CardContent>
     </Card> 

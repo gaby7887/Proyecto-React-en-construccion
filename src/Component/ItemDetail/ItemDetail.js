@@ -5,9 +5,9 @@ import {Card, CardContent, CardMedia, Typography} from '@mui/material';
 
 
  
-const ItemDetail = ({product, onAdd, open}) => {
+const ItemDetail = ({productoData, onAdd, open}) => {
 
-  const {stock} = product
+  const {stock} = productoData;
   
   
   return (
@@ -17,14 +17,14 @@ const ItemDetail = ({product, onAdd, open}) => {
       <CardMedia className='img'
           component="img"
           height="180"
-          image={product.imagen}
-          alt={product.title}
+          image={productoData.imagen}
+          alt={productoData.titulo}
       />
       <Typography gutterBottom variant="h5"  component="div">
-        {product.title}
+        {productoData.titulo}
       </Typography>
       <Typography variant="h5" color="text.secondary">
-        ${product.precio}
+        ${productoData.precio}
       </Typography>
       <Typography>
         

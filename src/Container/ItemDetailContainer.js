@@ -1,9 +1,46 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import ItemDetail from '../Component/ItemDetail/ItemDetail';
 import { useParams } from 'react-router-dom';
-import { useCartContext } from '../Context/CartContext';
 
+
+//FIREBASE - FIRESTORE
+import { collection, query, where, getDocs, documentId } from 'firebase/firestore';
+import { db } from '../Component/firebase/firebaseConfig';
+
+const ItemDetailContainer = () => {
+    const [productoData, setProductoData] = useState([]);
+
+    const id = useParams()
+    
+    let productoId = id.id;
+    console.log(productoId);
+    
+
+    useEffect (() => {
+        const getProductoData = async () =>{
+            const q = query(collection(db, 'tienda'), where(documentId(), "==", productoId));
+            const docs = [];
+            const querySnapshot = await getDocs(q)
+            //console.log(querySnapshot);
+            querySnapshot.forEach((doc) => {
+                docs.push({...doc.data(), id: doc.id});
+    
+            });
+            setProductoData(docs);
+        };
+        getProductoData();
+    }, [productoId]);
+
+    return (
+        <div>{productoData.map((data) => {
+            return <ItemDetail productoData={data} key={data.id} />;
+        })}</div>
+    )
+    
+}
+
+
+/* FUNCION USANDO FETCH PARA TRAER MI API JSON
 const ItemDetailContainer = () => {
     const [product, setProduct] = useState ({});
     const [open, setOpen] = useState(true)
@@ -40,7 +77,7 @@ const ItemDetailContainer = () => {
     
   )
 
-  };
+  };*/
 
 
 export default ItemDetailContainer;
