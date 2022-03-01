@@ -7,7 +7,9 @@ import { collection, query, getDocs } from 'firebase/firestore';
 import { db} from '../Component/firebase/firebaseConfig';
 
 
-const ItemListContainer = () => {
+
+
+const ItemListContainer = (categoriaData) => {
     const [productosData, setProductosData] = useState([]);
 
     useEffect (() => {
@@ -27,7 +29,7 @@ const ItemListContainer = () => {
 
     return (
         <div>{productosData.map((data) => {
-            return <ItemList productosData={productosData} />;
+            return  <ItemList productosData={productosData} />;
         })}</div>
     )
     
