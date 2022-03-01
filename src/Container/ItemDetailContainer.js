@@ -11,8 +11,6 @@ import { db } from '../Component/firebase/firebaseConfig';
 const ItemDetailContainer = () => {
     const [productoData, setProductoData] = useState([]);
 
-    console.log(productoData)
-
     const id = useParams()
     
     let productoId = id.id;
