@@ -3,12 +3,15 @@ import ItemDetail from '../Component/ItemDetail/ItemDetail';
 import { useParams } from 'react-router-dom';
 
 
+
 //FIREBASE - FIRESTORE
 import { collection, query, where, getDocs, documentId } from 'firebase/firestore';
 import { db } from '../Component/firebase/firebaseConfig';
 
 const ItemDetailContainer = () => {
     const [productoData, setProductoData] = useState([]);
+
+    console.log(productoData)
 
     const id = useParams()
     
@@ -40,7 +43,7 @@ const ItemDetailContainer = () => {
 }
 
 
-/* FUNCION USANDO FETCH PARA TRAER MI API JSON
+/* FUNCION USANDO FETCH PARA TRAER MI PRODUCTO (con mi json) 
 const ItemDetailContainer = () => {
     const [product, setProduct] = useState ({});
     const [open, setOpen] = useState(true)

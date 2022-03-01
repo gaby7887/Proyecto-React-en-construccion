@@ -26,6 +26,9 @@ const ItemDetail = ({productoData, onAdd, open}) => {
       <Typography variant="h5" color="text.secondary">
         ${productoData.precio}
       </Typography>
+      <Typography variant="h6" color="text.secondary">
+        Stock: {productoData.stock}
+      </Typography>
       <Typography>
         
         {

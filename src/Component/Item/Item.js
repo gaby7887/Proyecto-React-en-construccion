@@ -17,7 +17,10 @@ const Item = ({productoData}) => {
           {productoData.titulo}
         </Typography>
         <Typography variant="h5" color="text.secondary">
-          {productoData.precio}
+          ${productoData.precio}
+        </Typography>
+        <Typography variant="h6" color="text.secondary">
+          Stock: {productoData.stock}
         </Typography>
     <CardContent >
         <Link to={`/detail/${productoData.id}`} className="repo">Agregar</Link>

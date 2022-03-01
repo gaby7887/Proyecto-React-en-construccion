@@ -34,8 +34,9 @@ const ItemListContainer = () => {
 }
 
 
-//////////
-/*const ItemListContainer = () => {
+////////
+/*FUNCION PARA TRAER MI API (JSON)
+const ItemListContainer = () => {
     const [product, setProduct] = useState ([]);
 //useParams devuelve un objeto
 //las llaves son para obtener el atributo que yo quiero de ese objeto
