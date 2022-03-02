@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ItemDetail from '../Component/ItemDetail/ItemDetail';
 import { useParams } from 'react-router-dom';
-
-
+import { useCartContext } from '../Context/CartContext';
 
 //FIREBASE - FIRESTORE
 import { collection, query, where, getDocs, documentId } from 'firebase/firestore';
@@ -14,8 +13,12 @@ const ItemDetailContainer = () => {
     const id = useParams()
     
     let productoId = id.id;
-    console.log(productoId);
+    //console.log(productoId);
     
+    const [product, setProduct] = useState();
+    const [open, setOpen] = useState(true)
+    const {addItem} = useCartContext()
+    console.log(open)
 
     useEffect (() => {
         const getProductoData = async () =>{
@@ -25,16 +28,22 @@ const ItemDetailContainer = () => {
             //console.log(querySnapshot);
             querySnapshot.forEach((doc) => {
                 docs.push({...doc.data(), id: doc.id});
-    
             });
             setProductoData(docs);
         };
         getProductoData();
     }, [productoId]);
 
+    const onAdd = (count) => {
+      addItem(product,count);
+      setOpen(false) 
+      setProduct(useCartContext);
+      
+    };
+    
     return (
         <div>{productoData.map((data) => {
-            return <ItemDetail productoData={data} key={data.id} />;
+            return <ItemDetail productoData={data} key={data.id}  product={product} onAdd={onAdd} open={open} />;
         })}</div>
     )
     

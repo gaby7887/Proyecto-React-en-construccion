@@ -20,6 +20,7 @@ export const CartProvider = ({children}) => {
                 i.qty += count
             }
         })
+        
 
         setCart(filtro)
     }

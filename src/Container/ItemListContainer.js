@@ -21,7 +21,7 @@ const ItemListContainer = () => {
 
             const filtroCategoria = categoria ? docs.filter(docs => docs.categoria === categoria) : docs;
             //console.log(filtroCategoria);       
-            //console.log(categoria)
+            //console.log(docs)
              
              setProductosData(filtroCategoria)
             });
@@ -30,9 +30,7 @@ const ItemListContainer = () => {
         getProductos();
     }, [categoria] );
     
-
-    return <ItemList productosData={productosData} />;
-                     
+    return <ItemList productosData={productosData} />;                 
 }
 
 
