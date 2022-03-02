@@ -1,16 +1,14 @@
 import React, {useState, useEffect} from 'react';
 import ItemList from '../Component/ItemList/ItemList';
 
-
 //FIREBASE - FIRESTORE
 import { collection, query, getDocs } from 'firebase/firestore';
 import { db} from '../Component/firebase/firebaseConfig';
+import { useParams } from 'react-router-dom';
 
-
-
-
-const ItemListContainer = (categoriaData) => {
+const ItemListContainer = () => {
     const [productosData, setProductosData] = useState([]);
+    const {categoria} = useParams();
 
     useEffect (() => {
         const getProductos = async () =>{
@@ -20,19 +18,21 @@ const ItemListContainer = (categoriaData) => {
             //console.log('DATA:', querySnapshot);
             querySnapshot.forEach((doc) => {
                 docs.push({...doc.data(), id: doc.id});
-    
+
+            const filtroCategoria = categoria ? docs.filter(docs => docs.categoria === categoria) : docs;
+            //console.log(filtroCategoria);       
+            //console.log(categoria)
+             
+             setProductosData(filtroCategoria)
             });
-            setProductosData(docs);
+            
         };
         getProductos();
-    }, []);
-
-    return (
-        <div>{productosData.map((data) => {
-            return  <ItemList productosData={productosData} />;
-        })}</div>
-    )
+    }, [categoria] );
     
+
+    return <ItemList productosData={productosData} />;
+                     
 }
 
 
