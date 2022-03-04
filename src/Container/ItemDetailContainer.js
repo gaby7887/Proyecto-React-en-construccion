@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import ItemDetail from '../Component/ItemDetail/ItemDetail';
 import { useParams } from 'react-router-dom';
 import { useCartContext } from '../Context/CartContext';
+import { Link } from 'react-router-dom';
 
 //FIREBASE - FIRESTORE
 import { collection, query, where, getDocs, documentId } from 'firebase/firestore';
@@ -9,16 +10,13 @@ import { db } from '../Component/firebase/firebaseConfig';
 
 const ItemDetailContainer = () => {
     const [productoData, setProductoData] = useState([]);
-
-    const id = useParams()
+    const id = useParams();
     
     let productoId = id.id;
-    //console.log(productoId);
+    console.log(productoId);
     
-    const [product, setProduct] = useState();
-    const [open, setOpen] = useState(true)
-    const {addItem} = useCartContext()
-    console.log(open)
+    const [open, setOpen] = useState(true);
+    const {addItem} = useCartContext(productoData);
 
     useEffect (() => {
         const getProductoData = async () =>{
@@ -35,20 +33,24 @@ const ItemDetailContainer = () => {
     }, [productoId]);
 
     const onAdd = (count) => {
-      addItem(product,count);
+      addItem(productoData,count);
       setOpen(false) 
-      setProduct(useCartContext);
-      
+      setProductoData(addItem)
+      setProductoData(onAdd);   
     };
+    setProductoData()
     
-    return (
-        <div>{productoData.map((data) => {
-            return <ItemDetail productoData={data} key={data.id}  product={product} onAdd={onAdd} open={open} />;
-        })}</div>
-    )
-    
-}
+    return ( 
+      <div>
+        <Link to={`/detail/${productoData.id}`} className='Link'>
+          <ItemDetail productoData={productoData} key={productoData.id} product={productoData} onAdd={onAdd} open={open} />;
+        </Link>
 
+        <p>{productoData.titulo}</p>
+        <p>{productoData.precio}</p>
+      </div>
+    )  
+}
 
 /* FUNCION USANDO FETCH PARA TRAER MI PRODUCTO (con mi json) 
 const ItemDetailContainer = () => {

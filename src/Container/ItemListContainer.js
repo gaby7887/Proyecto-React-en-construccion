@@ -18,13 +18,14 @@ const ItemListContainer = () => {
             //console.log('DATA:', querySnapshot);
             querySnapshot.forEach((doc) => {
                 docs.push({...doc.data(), id: doc.id});
+            });
 
             const filtroCategoria = categoria ? docs.filter(docs => docs.categoria === categoria) : docs;
             //console.log(filtroCategoria);       
             //console.log(docs)
              
              setProductosData(filtroCategoria)
-            });
+            
             
         };
         getProductos();

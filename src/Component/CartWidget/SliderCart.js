@@ -6,6 +6,7 @@ import Button from '@mui/material/Button';
 import List from '@mui/material/List';
 import IconoCart from "../../Imagenes/IconoCart.png";
 import { useCartContext } from '../../Context/CartContext';
+import { Link } from 'react-router-dom';
 
 
 
@@ -54,7 +55,8 @@ export default function SliderCart() {
 }
                        
            <h4>Total: ${total()}</h4> 
-           <button onClick={clearItems}><i class="fas fa-trash-alt"></i></button>              
+           <button onClick={clearItems}><i class="fas fa-trash-alt"></i></button> 
+           <Link to='/cart'><button>Terminar compra</button></Link>             
       </List>
       
     </Box>
