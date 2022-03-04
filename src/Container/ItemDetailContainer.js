@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import ItemDetail from '../Component/ItemDetail/ItemDetail';
 import { useParams } from 'react-router-dom';
 import { useCartContext } from '../Context/CartContext';
-import { Link } from 'react-router-dom';
+import loading from '../Imagenes/loading.gif';
 
 //FIREBASE - FIRESTORE
 import { collection, query, where, getDocs, documentId } from 'firebase/firestore';
@@ -13,7 +13,7 @@ const ItemDetailContainer = () => {
     const id = useParams();
     
     let productoId = id.id;
-    console.log(productoId);
+    //console.log(productoId);
     
     const [open, setOpen] = useState(true);
     const {addItem} = useCartContext(productoData);
@@ -27,7 +27,7 @@ const ItemDetailContainer = () => {
             querySnapshot.forEach((doc) => {
                 docs.push({...doc.data(), id: doc.id});
             });
-            setProductoData(docs);
+            setProductoData(docs[0]);
         };
         getProductoData();
     }, [productoId]);
@@ -35,16 +35,15 @@ const ItemDetailContainer = () => {
     const onAdd = (count) => {
       addItem(productoData,count);
       setOpen(false) 
-      setProductoData(addItem)
-      setProductoData(onAdd);   
+       
     };
-    setProductoData()
+    //console.log(setProductoData)
     
     return ( 
       <div>
-        <Link to={`/detail/${productoData.id}`} className='Link'>
-          <ItemDetail productoData={productoData} key={productoData.id} product={productoData} onAdd={onAdd} open={open} />;
-        </Link>
+        
+          {productoData.length === 0 ? <img src={loading} alt='Logo'/> :<ItemDetail productoData={productoData} key={productoData.id} product={productoData} onAdd={onAdd} open={open} />};
+        
 
         <p>{productoData.titulo}</p>
         <p>{productoData.precio}</p>

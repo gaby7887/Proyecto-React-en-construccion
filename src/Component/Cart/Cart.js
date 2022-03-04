@@ -3,8 +3,8 @@ import { CartContext } from '../../Context/CartContext'
 
 const Cart = () => {
  const {cart, removeItems, clearItems, total} = useContext(CartContext)
- console.log(cart)  
- console.log(total)  
+ //console.log(cart)  
+ //console.log(total)  
 
   return (
    
