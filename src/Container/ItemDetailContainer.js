@@ -1,12 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import ItemDetail from '../Component/ItemDetail/ItemDetail';
 import { useParams } from 'react-router-dom';
 import { useCartContext } from '../Context/CartContext';
 import loading from '../Imagenes/loading.gif';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 //FIREBASE - FIRESTORE
 import { collection, query, where, getDocs, documentId } from 'firebase/firestore';
 import { db } from '../Component/firebase/firebaseConfig';
+import { CartContext  } from '../Context/CartContext';
 
 const ItemDetailContainer = () => {
     const [productoData, setProductoData] = useState([]);
@@ -17,6 +20,7 @@ const ItemDetailContainer = () => {
     
     const [open, setOpen] = useState(true);
     const {addItem} = useCartContext(productoData);
+    const {cart} = useContext(CartContext)
 
     useEffect (() => {
         const getProductoData = async () =>{
@@ -30,22 +34,43 @@ const ItemDetailContainer = () => {
             setProductoData(docs[0]);
         };
         getProductoData();
-    }, [productoId]);
+
+        cart.length === 0 && setOpen(true)
+    }, [productoId, cart]);
 
     const onAdd = (count) => {
       addItem(productoData,count);
       setOpen(false) 
+      
+      toast.success('😁 Producto Agregado', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored"
+        });
        
     };
     //console.log(setProductoData)
     
     return ( 
-      <div>    
-          {productoData.length === 0 ? <img src={loading} alt='Logo'/> :<ItemDetail productoData={productoData} key={productoData.id} product={productoData} onAdd={onAdd} open={open} />};
-        
-        <p>{productoData.titulo}</p>
-        <p>{productoData.precio}</p>
-      </div>
+      <>
+        <ToastContainer />
+        <div>    
+          {productoData.length === 0 ? <img src={loading} alt='Logo'/> 
+          :
+          <ItemDetail productoData={productoData} 
+          key={productoData.id} 
+          product={productoData} 
+          onAdd={onAdd} 
+          open={open} />
+          };
+        </div>
+      </>
+     
     )  
 }
 

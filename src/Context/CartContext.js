@@ -21,7 +21,6 @@ export const CartProvider = ({children}) => {
             }
         })
         
-
         setCart(filtro)
     }
 
@@ -42,10 +41,20 @@ export const CartProvider = ({children}) => {
         return cart.reduce((acc,el)=> acc + el.qty, 0);   
     }
 
-
-    const removeItems=(id)=>{
+    const removeItems=(id,toast)=>{
         const newItems = cart.filter(x=> x.id !== id)
         setCart(newItems)
+        toast.error("Producto Removido", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            icon: "❌",
+            theme: "colored",
+          });
     }
 
     const clearItems=()=>{
@@ -57,11 +66,7 @@ export const CartProvider = ({children}) => {
             <CartContext.Provider value={{cart, addItem, removeItems, clearItems, total, contador}}>
                 {children}
             </CartContext.Provider>
-            
-            
-    
         );
-        
     }
 
 

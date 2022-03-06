@@ -52,11 +52,9 @@ export default function SliderCart() {
 }
                        
            <h4>Total: ${total()}</h4> 
-           <button onClick={clearItems}><i class="fas fa-trash-alt"></i></button> 
-           <Link to='/cart'><button>Terminar compra</button></Link>     
-           <Link to='/compra'></Link>        
-      </List>
-      
+           <button onClick={clearItems}><i class="fas fa-trash-alt"></i>Vaciar Carrito</button> 
+           {cart.length > 0 &&  <Link to='/cart'><button>Terminar compra</button></Link>}             
+      </List>     
     </Box>
   );
 

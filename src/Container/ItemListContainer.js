@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import ItemList from '../Component/ItemList/ItemList';
+import loading from '../Imagenes/loading.gif';
 
 //FIREBASE - FIRESTORE
 import { collection, query, getDocs } from 'firebase/firestore';
@@ -24,14 +25,12 @@ const ItemListContainer = () => {
             //console.log(filtroCategoria);       
             //console.log(docs)
              
-             setProductosData(filtroCategoria)
-            
-            
+             setProductosData(filtroCategoria)     
         };
         getProductos();
     }, [categoria] );
     
-    return <ItemList productosData={productosData} />;                 
+    return productosData.length === 0 ? <img src={loading} alt='logo' className="loading" /> : <ItemList productosData={productosData} />;                 
 }
 
 
