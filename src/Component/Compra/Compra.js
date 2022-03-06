@@ -8,6 +8,7 @@ import { db } from '../firebase/firebaseConfig';
 
 import TextField from '@mui/material/TextField';
 
+
 const Compra = () => {
     const initialState = {
         name: '',
@@ -17,6 +18,8 @@ const Compra = () => {
 
     const [values, setValues] = useState(initialState);
     const {total, cart, clearItems} = useCartContext();
+     //este estado guarda el id de la compra
+     
    
     const onChange = (e) => {
         const {value, name} = e.target;
@@ -41,6 +44,7 @@ const Compra = () => {
                     id: item.id,
                     title: item.titulo,
                     price: item.precio,
+                    stock: item.ctock,
                     qty: item.qty,
                 })),
                 total: parseFloat(total()),
@@ -50,6 +54,7 @@ const Compra = () => {
         const orderInFires = async () => {
             const newOrderRef = doc(collection(db, "purchase"));
             await setDoc(newOrderRef, order);
+            return newOrderRef;
         }
         orderInFires()
         .then((res) =>
@@ -93,6 +98,7 @@ const Compra = () => {
                   style={{margin:10, width: 400}}/>              
               <button className='btnFormulario'>Send</button>
               </form>
+              
           </div>
           </>
         )
