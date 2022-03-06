@@ -9,7 +9,7 @@ export const CartProvider = ({children}) => {
 
     const isInCart = (id) => {
         const enElCart = cart.some(x => x.id === id)  
-        console.log(enElCart);
+        //console.log(enElCart);
         return enElCart
     }
 

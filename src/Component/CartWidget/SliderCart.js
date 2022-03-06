@@ -8,9 +8,6 @@ import IconoCart from "../../Imagenes/IconoCart.png";
 import { useCartContext } from '../../Context/CartContext';
 import { Link } from 'react-router-dom';
 
-
-
-
 export default function SliderCart() {
   const [state, setState] = useState({
                                         right: false,
@@ -56,7 +53,8 @@ export default function SliderCart() {
                        
            <h4>Total: ${total()}</h4> 
            <button onClick={clearItems}><i class="fas fa-trash-alt"></i></button> 
-           <Link to='/cart'><button>Terminar compra</button></Link>             
+           <Link to='/cart'><button>Terminar compra</button></Link>     
+           <Link to='/compra'></Link>        
       </List>
       
     </Box>

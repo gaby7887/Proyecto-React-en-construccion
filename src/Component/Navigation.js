@@ -11,7 +11,7 @@ const Navigation = () => {
             <ul className='List-ul'>
                 <Link to="/" className='Link'>HOME</Link>
                 <Dropdown />
-                <Link to="contacto" className='Link'>CONTACTO</Link>
+                <Link to="compra" className='Link'>Compra</Link>
             </ul>
             <NavBar />
         </nav>

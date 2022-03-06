@@ -40,11 +40,9 @@ const ItemDetailContainer = () => {
     //console.log(setProductoData)
     
     return ( 
-      <div>
-        
+      <div>    
           {productoData.length === 0 ? <img src={loading} alt='Logo'/> :<ItemDetail productoData={productoData} key={productoData.id} product={productoData} onAdd={onAdd} open={open} />};
         
-
         <p>{productoData.titulo}</p>
         <p>{productoData.precio}</p>
       </div>
