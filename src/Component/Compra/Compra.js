@@ -5,9 +5,7 @@ import { useCartContext } from '../../Context/CartContext';
 //FIREBASE
 import { collection, doc, setDoc, updateDoc, increment } from 'firebase/firestore';
 import { db } from '../firebase/firebaseConfig';
-
 import TextField from '@mui/material/TextField';
-
 
 const Compra = () => {
     const initialState = {
@@ -18,7 +16,6 @@ const Compra = () => {
 
     const [values, setValues] = useState(initialState);
     const {total, cart, clearItems} = useCartContext();
-     //este estado guarda el id de la compra
      
    
     const onChange = (e) => {
@@ -44,19 +41,19 @@ const Compra = () => {
                     id: item.id,
                     title: item.titulo,
                     price: item.precio,
-                    stock: item.ctock,
+                    stock: item.stock,
                     qty: item.qty,
                 })),
                 total: parseFloat(total()),
             }
             console.log(order)
 
-        const orderInFires = async () => {
+        const orderInFireS = async () => {
             const newOrderRef = doc(collection(db, "purchase"));
             await setDoc(newOrderRef, order);
             return newOrderRef;
         }
-        orderInFires()
+        orderInFireS()
         .then((res) =>
         alert(`Compra Confirmada! Su id de compra es: ${res.id}`)
         )
@@ -98,7 +95,6 @@ const Compra = () => {
                   style={{margin:10, width: 400}}/>              
               <button className='btnFormulario'>Send</button>
               </form>
-              
           </div>
           </>
         )
