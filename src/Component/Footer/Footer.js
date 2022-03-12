@@ -68,7 +68,7 @@ const Footer = () => {
                                     </div>
                                     <div className="col-md-6">
                                         <div className="widget_menu">
-                                            <h3>Account</h3>
+                                            <h3>More info</h3>
                                             <ul>
                                                 
                                                 <li><span onClick={()=>infoAlerta()}>Información sobre envíos</span></li>
