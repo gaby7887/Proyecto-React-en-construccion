@@ -1,37 +1,52 @@
-.card {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;    
-    
-  }
+.listaProductos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+.card{
+  width: 18rem;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #1d2124;
+  text-align: center;
+}
+.item-info-producto h4 a {
+  color: #080808;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
 
-  .cardInd {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 30px;
-    
-  }
+.money {
+  font-size: 1em;
+  font-weight: 800;
+  color: #ff4c4c;
+  letter-spacing: 2px;
+}
 
-  a {
-      font-size: 17px;
-  }
+.producto_precio {
+  margin: 1em 0 0 0;
+  padding: 1em 0 0 0;
+  border-top: 1px solid #ddd;
+}
 
-  .img {
-      margin: 30px;
-  }
+.producto-info {
+  background: #f7f7f7;
+  padding: 1em;
+  margin-bottom: 25px;
+}
 
-  .listaProductos {
-    display: flex;
-    flex-wrap: wrap;
-  }
+.item-info-producto {
+  padding: 1em 0 1em 0;
+  text-align: center;
+}
 
-  .repo {
-    color: #1976d2;
-    text-decoration: none;
-    font-weight: 400;
-  }
+.artc-img-item {
+  padding: 1em;
+}
 
-  
+.img-fluid{
+  height: 210px;
+}

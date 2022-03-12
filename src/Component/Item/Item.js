@@ -23,7 +23,7 @@ const Item = ({productoData}) => {
           Stock: {productoData.stock}
         </Typography>
     <CardContent >
-        <Link to={`/detail/${productoData.id}`} className="repo">Agregar</Link>
+        <Link to={`/detail/${productoData.id}`} className="btn shop">Ver info</Link>
     </CardContent>
       </CardContent>
     </Card> 

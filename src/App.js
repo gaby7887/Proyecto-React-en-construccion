@@ -9,6 +9,7 @@ import Cart from './Component/Cart/Cart';
 import Compra from './Component/Compra/Compra';
 import { CartProvider} from './Context/CartContext';
 import './App.css'
+import Footer from './Component/Footer/Footer';
 
 //FIREBASE / FIRESTORE
 //import {db} from './Component/firebase/firebaseConfig';
@@ -33,6 +34,7 @@ const App = () => {
           <Route path='*' element={<Error />} />
         </Routes>
       </Router>
+      <Footer />
       </CartProvider>
       
     </>

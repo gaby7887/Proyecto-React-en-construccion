@@ -60,9 +60,10 @@ const ItemDetailContainer = () => {
       <>
         <ToastContainer />
         <div>    
-          {productoData.length === 0 ? <img src={loading} alt='Logo'/> 
+          {productoData.length === 0 ? <img src={loading} alt='Logo' className='loading'/> 
           :
-          <ItemDetail productoData={productoData} 
+          <ItemDetail 
+          productoData={productoData} 
           key={productoData.id} 
           product={productoData} 
           onAdd={onAdd} 

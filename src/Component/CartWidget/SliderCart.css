@@ -3,3 +3,16 @@
     
 }
 
+.span{
+    padding-left: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    color: red;
+}
+.fas{
+    font-size: 20px
+}
+.slideCard{
+    display: flex;
+    margin-top: 12px;
+}
