@@ -24,12 +24,27 @@ const Footer = () => {
     }
     
     const pagosAlerta=()=>{
-        swal(
-        "Formas de pago", `Podes abonar con Mercado Pago utilizando tarjetas de crédito, débito o en efectivo a través de cadenas de pago.
+        swal({
+            title: "Formas de pago", 
+            button: "aceptar",
+            text: `Podes abonar con Mercado Pago utilizando tarjetas de crédito, débito o en efectivo a través de cadenas de pago.
 
         Tarjetas de crédito/débito: verás el importe descontado en el resumen correspondiente al próximo cierre de tarjeta. 
         Contamos con cuotas sin interés y promociones bancarias.
-        Nuestro sistema de cobranza es 100% seguro. Toda la información es encriptada por Mercado Pago.`);
+        Nuestro sistema de cobranza es 100% seguro. Toda la información es encriptada por Mercado Pago.`
+            
+        });
+    }
+
+    const suscripcionAlerta=()=> {
+        swal({
+            title: "Suscribite al newsletter", 
+            button: "aceptar",
+            text: `¡Suscribite y obtené $750 de descuento en tu primera compra!
+
+            No acumulable con otras promociones vigentes - No aplica durante eventos especiales HotSale / Weekends`
+            
+        });
     }
     
   return (
@@ -45,8 +60,8 @@ const Footer = () => {
                                 </a>
                             </div>
                             <div className="information_f">
-                                <p><strong>ADDRESS:</strong> Calle 163, Hudson CABA</p>
-                                <p><strong>TELEPHONE:</strong> +54 11 22334455</p>
+                                <p><strong>DIRECCION:</strong> Calle 163, Hudson CABA</p>
+                                <p><strong>TELEFONO:</strong> +54 11 22334455</p>
                                 <p><strong>EMAIL:</strong> tiendaOnline@gmail.com</p>
                             </div>
                         </div>
@@ -68,11 +83,12 @@ const Footer = () => {
                                     </div>
                                     <div className="col-md-6">
                                         <div className="widget_menu">
-                                            <h3>More info</h3>
+                                            <h3>Mas info</h3>
                                             <ul>
                                                 
                                                 <li><span onClick={()=>infoAlerta()}>Información sobre envíos</span></li>
-                                                <li><span onClick={()=>cambiosAlerta()}>Cambios y devoluciones</span></li>  
+                                                <li><span onClick={()=>cambiosAlerta()}>Cambios y devoluciones</span></li>
+                                                <li><span onClick={()=>suscripcionAlerta()}>Suscripción al Newsletter</span></li>   
                                                 <li><button onClick={()=>pagosAlerta()}>Formas de Pago</button></li>                                               
                                             </ul>
                                         </div>
