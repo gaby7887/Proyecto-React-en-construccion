@@ -10,11 +10,8 @@ const Cart = () => {
  const [promotion, setPromotion] = useState(0) 
 
  const handChange=(e)=>{
-   console.log(e.target.value);
    let calculo = (total()-(total()*0.10))
-   console.log(calculo);
    e.target.value.toUpperCase() === 'PRIMERA10' && setPromotion(calculo)
-   console.log(promotion);
  }
 
  return (
@@ -89,6 +86,5 @@ const Cart = () => {
     </>
   )
 }
-  
-  
+   
 export default Cart;

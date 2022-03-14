@@ -17,7 +17,6 @@ const Navigation = () => {
             <NavBar />
         </nav>
     )
-
 }
 
 export default Navigation;

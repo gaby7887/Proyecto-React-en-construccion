@@ -48,13 +48,11 @@ const ItemDetail = ({productoData, onAdd, open}) => {
 
             <p className="mt-3 italic-blue">Consectetur adipisicing elPellentesque vehicula augue eget nisl ullamcorper, molestie blandit ipsum auctor. Mauris volutpat augue dolor.Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut lab ore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. labore et dolore magna aliqua.</p>
         </div>
-    </div>
-  
+    </div> 
 </div> 
 );
 }
     
-
 export default ItemDetail;
 
 

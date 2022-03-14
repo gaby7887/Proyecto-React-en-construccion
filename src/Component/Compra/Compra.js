@@ -24,9 +24,9 @@ const Compra = () => {
     };
 
     const onSubmit = async (e) => {
-        e.preventDefault();
-        console.log(values);   
-        createOrder()  
+        e.preventDefault();  
+        createOrder()
+        setValues(initialState)  
         }
 
         const createOrder = () => {
@@ -46,7 +46,6 @@ const Compra = () => {
                 })),
                 total: parseFloat(total()),
             }
-            console.log(order)
 
         const orderInFireS = async () => {
             const newOrderRef = doc(collection(db, "purchase"));

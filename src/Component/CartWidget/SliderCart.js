@@ -19,11 +19,9 @@ export default function SliderCart() {
     if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
       return;
     }
-
     setState({ right: open });
   };
   
-
   const list = (anchor) => (
     <Box
       sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 350 }}
@@ -46,8 +44,7 @@ export default function SliderCart() {
                }
                  }><i class="fas fa-trash-alt"></i></button>
                 </div>
-             </div>
-                          
+             </div>                  
                 })
 }
                        

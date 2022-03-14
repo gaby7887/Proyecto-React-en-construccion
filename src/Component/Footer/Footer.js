@@ -84,8 +84,7 @@ const Footer = () => {
                                     <div className="col-md-6">
                                         <div className="widget_menu">
                                             <h3>Mas info</h3>
-                                            <ul>
-                                                
+                                            <ul>                                           
                                                 <li><span onClick={()=>infoAlerta()}>Información sobre envíos</span></li>
                                                 <li><span onClick={()=>cambiosAlerta()}>Cambios y devoluciones</span></li>
                                                 <li><span onClick={()=>suscripcionAlerta()}>Suscripción al Newsletter</span></li>   

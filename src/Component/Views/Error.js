@@ -1,10 +1,16 @@
+import React from 'react';
+import Alert from '@mui/material/Alert';
+import Stack from '@mui/material/Stack';
+
 const Error = () => {
     return (
-        <div>
-            <h1>Error</h1>
-            <p>El sitio web al que ud. intenta ingresar no está disponible</p>
-            <h3>404</h3>
-        </div>
+
+        <Stack sx={{ width: '100%' }} spacing={2} >
+        <Alert variant="filled" severity="error">
+            El sitio web al que ud. intenta ingresar no está disponible
+        <h2> Error 404</h2>
+        </Alert>
+        </Stack>
     );
 };
 

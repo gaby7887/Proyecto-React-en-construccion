@@ -16,14 +16,11 @@ const ItemListContainer = () => {
             const q = query(collection(db, 'tienda'));
             const docs = [];
             const querySnapshot = await getDocs(q);
-            //console.log('DATA:', querySnapshot);
             querySnapshot.forEach((doc) => {
                 docs.push({...doc.data(), id: doc.id});
             });
 
             const filtroCategoria = categoria ? docs.filter(docs => docs.categoria === categoria) : docs;
-            //console.log(filtroCategoria);       
-            //console.log(docs)
              
              setProductosData(filtroCategoria)     
         };
@@ -42,7 +39,6 @@ const ItemListContainer = () => {
 //las llaves son para obtener el atributo que yo quiero de ese objeto
 const { categoria } = useParams();
 
-
     useEffect(() => {
         const check = async() => {
         let response = await fetch('/listadoProductos.json');
@@ -55,11 +51,9 @@ const { categoria } = useParams();
     }, [categoria]);
         
     return (
-
         <>
             <ItemList product={product} />
-        </>
-        
+        </>    
     )
 };*/
 

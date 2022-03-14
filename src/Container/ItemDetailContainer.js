@@ -16,7 +16,6 @@ const ItemDetailContainer = () => {
     const id = useParams();
     
     let productoId = id.id;
-    //console.log(productoId);
     
     const [open, setOpen] = useState(true);
     const {addItem} = useCartContext(productoData);
@@ -54,7 +53,6 @@ const ItemDetailContainer = () => {
         });
        
     };
-    //console.log(setProductoData)
     
     return ( 
       <>
@@ -70,8 +68,7 @@ const ItemDetailContainer = () => {
           open={open} />
           };
         </div>
-      </>
-     
+      </> 
     )  
 }
 
@@ -105,13 +102,10 @@ const ItemDetailContainer = () => {
         <Link to={`/detail/${product.id}`} className='Link'> 
             <ItemDetail product={product} onAdd={onAdd} open={open} />
         </Link>
-
         <p>{product.title}</p>
         <p>{product.precio}</p>
-    </div>
-    
+    </div>  
   )
-
   };*/
 
 

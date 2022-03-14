@@ -9,7 +9,7 @@ export const CartProvider = ({children}) => {
 
     const isInCart = (id) => {
         const enElCart = cart.some(x => x.id === id)  
-        //console.log(enElCart);
+
         return enElCart
     }
 
@@ -60,7 +60,6 @@ export const CartProvider = ({children}) => {
     const clearItems=()=>{
         setCart([])
     }
-
 
         return (
             <CartContext.Provider value={{cart, addItem, removeItems, clearItems, total, contador}}>

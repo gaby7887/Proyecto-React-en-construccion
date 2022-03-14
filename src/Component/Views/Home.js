@@ -1,14 +1,16 @@
 import React from 'react';
 import ItemListContainer from '../../Container/ItemListContainer';
+/*import asics from '../../Imagenes/asics.jpg';
+import nike from '../../Imagenes/nike.jpg';
+import fila from '../../Imagenes/fila.jpg'*/
 
 const Home = () => {
   return (
-    
-  <div>
-        <Banner />
-        <Section />
-        <ItemListContainer />
-  </div>
+      <div>
+         <Banner />
+         <Section />
+         <ItemListContainer />
+      </div>
   );
 };
 
@@ -21,13 +23,13 @@ export const Banner=()=>{
 				<div className="row">
 					<div className="breadcrumb-text">
 						<div className="breadcrumb-menu">
-              <p className='slogan'>La motivación es lo que te pone en marcha, y el hábito es lo que hace que sigas...</p>
+                     <p className='slogan'>La motivación es lo que te pone en marcha, 
+                                 y el hábito es lo que hace que sigas...</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-
   )
 }
 
@@ -37,7 +39,7 @@ export const Section = () => {
          <div className="container">
             <div className="heading_container heading_center">
                <h2>
-               Por qué comprar con nosotros
+                  Por qué comprar con nosotros
                </h2>
             </div>
             <div className="row">
@@ -63,7 +65,7 @@ export const Section = () => {
                      </div>
                      <div className="detail-box">
                         <h5>
-                        Envío gratis
+                           Envío gratis
                         </h5>
                         <p>
                            Lorem Ipsum available
@@ -91,3 +93,21 @@ export const Section = () => {
       </section>
   )
 }
+
+/*export const Carrusel = () => {
+   return (
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src={asics} id="asics" class="d-block" alt="logo" width={50} />
+    </div>
+    <div class="carousel-item">
+      <img src={nike} id="nike" class="d-block" alt="logo" width={50} />
+    </div>
+    <div class="carousel-item">
+      <img src={fila} id="fila" class="d-block" alt="logo" width={50} />
+    </div>
+  </div>
+</div>
+   )
+}*/

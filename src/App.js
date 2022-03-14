@@ -11,20 +11,14 @@ import { CartProvider} from './Context/CartContext';
 import './App.css'
 import Footer from './Component/Footer/Footer';
 
-//FIREBASE / FIRESTORE
-//import {db} from './Component/firebase/firebaseConfig';
-
-
 const App = () => {
   return (
-  
     <>
     <CartProvider>
       <Router>
         <div>
           <Navigation />
         </div> 
-
         <Routes>
           <Route path='/' element={<Home />} />   
           <Route path='/compra' element={<Compra />} />  
@@ -35,10 +29,8 @@ const App = () => {
         </Routes>
       </Router>
       <Footer />
-      </CartProvider>
-      
+      </CartProvider>   
     </>
- 
   )
 };
 
