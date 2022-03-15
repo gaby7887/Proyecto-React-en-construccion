@@ -1,8 +1,5 @@
 import React from 'react';
 import ItemListContainer from '../../Container/ItemListContainer';
-/*import asics from '../../Imagenes/asics.jpg';
-import nike from '../../Imagenes/nike.jpg';
-import fila from '../../Imagenes/fila.jpg'*/
 
 const Home = () => {
   return (
@@ -93,21 +90,3 @@ export const Section = () => {
       </section>
   )
 }
-
-/*export const Carrusel = () => {
-   return (
-      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src={asics} id="asics" class="d-block" alt="logo" width={50} />
-    </div>
-    <div class="carousel-item">
-      <img src={nike} id="nike" class="d-block" alt="logo" width={50} />
-    </div>
-    <div class="carousel-item">
-      <img src={fila} id="fila" class="d-block" alt="logo" width={50} />
-    </div>
-  </div>
-</div>
-   )
-}*/
